@@ -1,0 +1,16 @@
+/* variables */
+
+$main-color: #1eaacd;
+$black: #333;
+
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $black;
+    font-family: 'Varela Round', sans-serif;
+}
