@@ -8,6 +8,7 @@ $black: #333;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,5 +16,44 @@ body {
     font-family: 'Varela Round', sans-serif;
 }
 
+.container {
+    padding: 0 100px;
+}
+
 
 /* menu */
+
+nav {
+    display: flex;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    #navLinks {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        #searchInput {
+            transform: translateY(4px);
+            div {
+                position: relative;
+                span {
+                    position: absolute;
+                    right: 0px;
+                }
+            }
+            input::-webkit-calendar-picker-indicator {
+                display: none;
+            }
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            span {
+                transform: translateY(2px);
+            }
+        }
+    }
+}

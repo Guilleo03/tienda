@@ -19,18 +19,31 @@ const Menu = (props) => {
     }
 
     return (
-        <nav>
+        <nav className="container">
             <div>
                 <Logo />
             </div>
-            <div>
-                <div>
+            <div id="navLinks">
+                <div id="searchInput">
                     <form>
-                        <input type="text" list="allItems" />
+                        <div>
+                            <span class="material-icons-outlined">search</span>
+                            <input type="text" list="allItems" />
+                        </div>
                         <datalist id="allItems">
                             {props.allItems.map(i => <option key={i.id} value={i.title} />)}
                         </datalist>
                     </form>
+                </div>
+                <div>
+                    <ul>
+                        <li>Home</li>
+                        <li>Catalogue</li>
+                        <li>Contact</li>
+                        <li>
+                            <span class="material-icons-outlined">shopping_cart</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
